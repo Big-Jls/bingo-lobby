@@ -1,0 +1,57 @@
+BingoLobby - NOTICE
+
+This distribution is an unofficial community port of BingoLobby to
+Minecraft 26.2 / NeoForge. It is not affiliated with, endorsed by, or
+sponsored by the original author.
+
+------------------------------------------------------------------
+1. Original work
+------------------------------------------------------------------
+Name:        BingoLobby (a lobby for the Bongo Bingo mod)
+Author:      noeppi_noeppi
+Source:      https://github.com/noeppi-noeppi/BingoLobby
+License:     Apache License 2.0
+
+------------------------------------------------------------------
+2. This port
+------------------------------------------------------------------
+Name:        BingoLobby (Unofficial NeoForge Port)
+Mod id:      bingolobby
+Maintainer:  Big_Jls
+Assistance:  DeepSeek-v4.1-Flash-1017 (porting/code assistance)
+Source:      https://github.com/Big-Jls/bingo-lobby
+License:     Apache License 2.0 (for the modifications in this port)
+
+Changes made for this port:
+- Ported the Forge 1.20.1-era code base to Minecraft 26.2 / NeoForge
+  (lobby dimension and world preset, payloads, commands, events, rendering).
+- Switched the dependency from the old `bingo` id to the ReBongo port
+  (modId `bongo`, package io.github.noeppi_noeppi.mods.bongo).
+- Default task/setting ids now use the `bongo:` namespace
+  (bongo:hard / bongo:default); existing configs must be updated once.
+- Merged/renamed several upstream classes into the current file layout;
+  see CHANGES.md and the per-file headers.
+- Fixed a raw-collection compile error in LobbyCommands.
+
+------------------------------------------------------------------
+3. Third-party content
+------------------------------------------------------------------
+This port does not contain Botania-derived assets. The bundled
+bingolobby-preset.zip is the lobby world preset produced for this project
+from the upstream dimension settings.
+
+------------------------------------------------------------------
+4. Dependencies (not bundled)
+------------------------------------------------------------------
+Bongo / ReBongo
+  Original mod: Bongo by noeppi_noeppi, Apache License 2.0
+  NeoForge 26.2 port: ReBongo by Big_Jls (with DeepSeek-v4.1-Flash-1017)
+  https://github.com/Big-Jls/rebongo
+LibX
+  ModdingX (MelanX, noeppi_noeppi), Apache License 2.0
+  https://github.com/ModdingX/LibX
+Minecraft / NeoForge
+  Mojang / NeoForged, not bundled.
+
+Trademarks and names belong to their respective owners. This project does not
+claim any trademark rights (Apache License 2.0, section 6).

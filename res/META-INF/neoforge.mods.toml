@@ -1,0 +1,49 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "Apache-2.0"
+issueTrackerURL = "https://github.com/Big-Jls/bingo-lobby/issues"
+
+[[mods]]
+modId = "bingolobby"
+version = "26.2-1.0.0-port.1"
+displayName = "BingoLobby (Unofficial NeoForge Port)"
+displayURL = "https://github.com/Big-Jls/bingo-lobby"
+authors = "noeppi_noeppi (original BingoLobby), Big_Jls (NeoForge port), DeepSeek-v4.1-Flash-1017 (port assistant)"
+description = '''
+Unofficial community port of BingoLobby to Minecraft 26.2 / NeoForge.
+Requires the ReBongo port of Bongo (modId: bongo) and LibX 26.2-8.0.0.
+Not affiliated with or endorsed by the original author.
+Original project: https://github.com/noeppi-noeppi/BingoLobby (Apache-2.0).
+Source of this port: https://github.com/Big-Jls/bingo-lobby
+'''
+
+[[dependencies.bingolobby]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.2.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bingolobby]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bingolobby]]
+modId = "bongo"
+type = "required"
+versionRange = "[26.2-1.0.0-port.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bingolobby]]
+modId = "libx"
+type = "required"
+versionRange = "[26.2-8.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[features.bingolobby]
+javaVersion = "[25,)"
