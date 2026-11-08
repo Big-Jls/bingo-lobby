@@ -1,5 +1,10 @@
 # BingoLobby — Bongo 的非官方 NeoForge 26.2 大厅移植
 
+> **原项目（上游）**
+> - BingoLobby — <https://github.com/noeppi-noeppi/BingoLobby>
+> - Bongo — <https://github.com/noeppi-noeppi/Bongo>
+> - LibX — <https://github.com/ModdingX/LibX>
+>
 > **非官方项目**：这是社区维护的移植版，不是官方发布，与原作者 **noeppi_noeppi** 没有隶属关系，也未获其背书或赞助。原项目为 **BingoLobby**。
 >
 > **许可**：Apache License 2.0，源码即本仓库。
