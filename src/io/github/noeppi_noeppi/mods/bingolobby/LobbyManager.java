@@ -21,8 +21,6 @@ import net.neoforged.neoforge.event.server.ServerStartedEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent.Post;
 
 public final class LobbyManager {
-   private static long wonAt = -1L;
-
    @SubscribeEvent
    public static void onAboutToStart(ServerAboutToStartEvent var0) {
       Path var1 = var0.getServer().getWorldPath(LevelResource.ROOT).resolve("dimensions").resolve("bingolobby").resolve("lobby");
@@ -52,15 +50,6 @@ public final class LobbyManager {
             ServerLevel var3 = var1.overworld();
             Bingo var4 = Bingo.get(var3);
             Lobby var5 = Lobby.get(var2);
-            if (!var4.active() || !var4.won()) {
-               wonAt = -1L;
-            } else if (wonAt < 0L) {
-               wonAt = System.currentTimeMillis();
-            } else if (System.currentTimeMillis() - wonAt >= ((Integer)LobbyConfig.WIN_RETURN_SECONDS.get()).intValue() * 1000L) {
-               execute(var1, "bingo stop");
-               wonAt = -1L;
-            }
-
             if (var4.active() && !var4.running() && !var4.won()) {
                boolean var6 = var4.getTeams().stream().anyMatch(var0x -> !var0x.getPlayers().isEmpty());
                if (!var6 && var5.getCountdown() >= 0) {

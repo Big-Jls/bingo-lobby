@@ -26,7 +26,7 @@
 ## 安装
 
 1. 安装 NeoForge 26.2.0.93+、官方 LibX 26.2-8.0.0、ReBongo。
-2. 把 `BingoLobby-26.2-1.0.0-port.1.jar` 放入客户端与服务端的 `mods`。
+2. 把 `BingoLobby-26.2-1.0.0-port.2.jar` 放入客户端与服务端的 `mods`。
 3. 进入服务器后会在大厅维度重生；首次启动会把 `bingolobby-preset.zip` 复制到 `config/`。
 
 ## 命令
@@ -45,9 +45,10 @@
 
 - `auto_create`：没有对局时自动创建
 - `auto_start_seconds`：自动开始倒计时
-- `win_return_seconds`：胜利后回大厅等待时间
 - `tasks`：自动创建用的任务集，默认 `bongo:hard`
 - `settings`：自动创建用的设置，默认 `bongo:default`
+
+胜负分出后不再自动执行 `bingo stop`，对局会保持“已获胜”状态，需要管理员手动结束（`win_return_seconds` 配置项已移除）。
 
 **从旧版本升级**：如果你之前用的是 `bingo:hard` / `bingo:default`，请改成 `bongo:hard` / `bongo:default`，否则会提示“game definition could not be found”。
 
@@ -56,11 +57,11 @@
 需要 JDK 25、NeoForge 26.2.0.93 安装、官方 LibX 与已构建的 ReBongo jar：
 
 ```powershell
-.\build.ps1 -Version 26.2-1.0.0-port.1 `
+.\build.ps1 -Version 26.2-1.0.0-port.2 `
   -MinecraftDir "D:\minecraft\.minecraft" `
   -NeoForgeVersion "26.2-NeoForge_26.2.0.93" `
   -LibXJar "D:\minecraft\.minecraft\mods\LibX-26.2-8.0.0.jar" `
-  -BongoJar ".\..\rebongo\dist\Bingo-26.2-1.0.0-port.1.jar"
+  -BongoJar ".\..\rebongo\dist\Bingo-26.2-1.0.0-port.5.jar"
 ```
 
 ## 许可与致谢

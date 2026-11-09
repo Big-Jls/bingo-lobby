@@ -5,7 +5,7 @@ issueTrackerURL = "https://github.com/Big-Jls/bingo-lobby/issues"
 
 [[mods]]
 modId = "bingolobby"
-version = "26.2-1.0.0-port.1"
+version = "26.2-1.0.0-port.2"
 displayName = "BingoLobby (Unofficial NeoForge Port)"
 displayURL = "https://github.com/Big-Jls/bingo-lobby"
 authors = "noeppi_noeppi (original BingoLobby), Big_Jls (NeoForge port), DeepSeek-v4.1-Flash-1017 (port assistant)"

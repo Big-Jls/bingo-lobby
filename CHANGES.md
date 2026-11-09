@@ -1,5 +1,13 @@
 # Changelog
 
+## 26.2-1.0.0-port.2 — 2026-11-10
+
+### Changed
+
+- Winning a game no longer automatically runs `bingo stop` after a delay. The
+  match stays in its won state until an operator ends it manually; the
+  `win_return_seconds` config option was removed together with that behaviour.
+
 ## 26.2-1.0.0-port.1 — 2026-11-09
 
 First public source release of the unofficial NeoForge 26.2 port.
