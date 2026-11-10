@@ -61,7 +61,7 @@
   -MinecraftDir "D:\minecraft\.minecraft" `
   -NeoForgeVersion "26.2-NeoForge_26.2.0.93" `
   -LibXJar "D:\minecraft\.minecraft\mods\LibX-26.2-8.0.0.jar" `
-  -BongoJar ".\..\rebongo\dist\Bingo-26.2-1.0.0-port.5.jar"
+  -BongoJar ".\..\rebongo\dist\ReBongo-26.2-1.0.0-port.6.jar"
 ```
 
 ## 许可与致谢
