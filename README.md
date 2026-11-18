@@ -1,5 +1,7 @@
 # BingoLobby — Bongo 的非官方 NeoForge 26.2 大厅移植
 
+> English: [README.en.md](README.en.md)
+
 > **原项目（上游）**
 > - BingoLobby — <https://github.com/noeppi-noeppi/BingoLobby>
 > - Bongo — <https://github.com/noeppi-noeppi/Bongo>
@@ -60,8 +62,8 @@
 .\build.ps1 -Version 26.2-1.0.0-port.2 `
   -MinecraftDir "D:\minecraft\.minecraft" `
   -NeoForgeVersion "26.2-NeoForge_26.2.0.93" `
-  -LibXJar "D:\minecraft\.minecraft\mods\LibX-26.2-8.0.0.jar" `
-  -BongoJar ".\..\rebongo\dist\ReBongo-26.2-1.0.0-port.6.jar"
+  -LibXJar "D:\minecraft\.minecraft\versions\26.2 bingo\mods\LibX-26.2-8.0.0.jar" `
+  -BongoJar ".\..\rebongo\dist\ReBongo-26.2-1.0.0-port.13.jar"
 ```
 
 ## 许可与致谢
