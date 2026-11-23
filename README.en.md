@@ -11,7 +11,7 @@
 
 ## What is this?
 
-A lobby dimension add-on for [ReBongo](https://github.com/Big-Jls/rebongo): players no longer respawn in the overworld, but at a fixed spot in the lobby dimension (X=0, Y=65, Z=0). Team areas are marked with colored carpets — stand on a carpet to pick that team. Only operators can interact inside the lobby dimension.
+A lobby dimension add-on for [ReBongo](https://github.com/Big-Jls/rebongo): players no longer respawn in the overworld, but at a fixed spot in the lobby dimension (X=0, Y=65, Z=0). Team areas are marked with colored carpets — stand on a carpet to pick that team; stepping off the carpet leaves the team and resets the TAB colour. Only operators can interact inside the lobby dimension.
 
 ## Requirements
 
