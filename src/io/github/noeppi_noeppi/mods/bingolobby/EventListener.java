@@ -55,6 +55,12 @@ public class EventListener {
                         ModDimensions.teleportToLobby(var2, false);
                      } else if (var11 != null) {
                         var11.addPlayer(var2);
+                     } else {
+                        // 离开地毯（var4 == null）：退出当前队伍，TAB 颜色随之重置
+                        Team var14 = var9.getTeam(var2);
+                        if (var14 != null) {
+                           var14.removePlayer(var2);
+                        }
                      }
                   }
                } else if (var4 != null) {

@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "26.2-1.0.0-port.2",
+    [string]$Version = "26.2-1.0.0-port.3",
     [string]$MinecraftDir = "D:\minecraft\.minecraft",
     [string]$NeoForgeVersion = "26.2-NeoForge_26.2.0.93",
     [string]$LibXJar = "",
@@ -52,8 +52,11 @@ $outDir = $build -replace '\\', '/'
 
 Write-Host "Compiling ($Version) ..."
 Push-Location $root
+$prevEap = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
 & $javac '-J-Duser.language=en' '-J-Duser.country=US' "@$argsFile" "-Xmaxerrs" "500" "@$srcFile"
 $code = $LASTEXITCODE
+$ErrorActionPreference = $prevEap
 Pop-Location
 if ($code -ne 0) { throw "compile failed ($code)" }
 

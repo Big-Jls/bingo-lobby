@@ -1,5 +1,15 @@
 # Changelog
 
+## 26.2-1.0.0-port.3 — 2026-11-23
+
+### Fixed
+
+- Restored the upstream lobby behaviour: stepping off a wool carpet now removes
+  the player from their current Bingo team. The TAB scoreboard colour therefore
+  resets instead of keeping a colour from `/bingo spread` or a previously used
+  carpet, fixing mismatched TAB colours after mixing the two team-selection
+  methods.
+
 ## 26.2-1.0.0-port.2 — 2026-11-10
 
 ### Changed
